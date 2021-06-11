@@ -20,6 +20,149 @@ var threePmBtn = document.querySelector("#btn-3");
 var fourPmBtn = document.querySelector("#btn-4");
 var fivePmBtn = document.querySelector("#btn-5");
 
+// logic for moment.js
+
+// get current time
+var currentTime = moment().format("hh");
+
+// for past hour(s)
+
+
+// for current hour
+if (parseInt(currentTime) === 9) {
+    nineAmInput.className = "present col-10";
+    //future times below
+    tenAmInput.className = "future col-10";
+    elevenAmInput.className = "future col-10";
+    twelvePmInput.className = "future col-10";
+    onePmInput.className = "future col-10";
+    twoPmInput.className = "future col-10";
+    threePmInput.className = "future col-10";
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+
+}
+
+if (parseInt(currentTime) === 10) {
+    tenAmInput.className = "present col-10";
+    // future times below
+    elevenAmInput.className = "future col-10";
+    twelvePmInput.className = "future col-10";
+    onePmInput.className = "future col-10";
+    twoPmInput.className = "future col-10";
+    threePmInput.className = "future col-10";
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+    // past times below
+    nineAmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 11) {
+    elevenAmInput.className = "present col-10";
+    // future times below
+    twelvePmInput.className = "future col-10";
+    onePmInput.className = "future col-10";
+    twoPmInput.className = "future col-10";
+    threePmInput.className = "future col-10";
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+     // past times below
+     nineAmInput.className = "past col-10";
+     tenAmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 12) {
+    twelvePmInput.className = "present col-10";
+    // future times below
+    onePmInput.className = "future col-10";
+    twoPmInput.className = "future col-10";
+    threePmInput.className = "future col-10";
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+    // past times below
+    nineAmInput.className = "past col-10";
+    tenAmInput.className = "past col-10";
+    elevenAmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 1) {
+    onePmInput.className = "present col-10";
+    // future times below
+    twoPmInput.className = "future col-10";
+    threePmInput.className = "future col-10";
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+    // past times below
+    nineAmInput.className = "past col-10";
+    tenAmInput.className = "past col-10";
+    elevenAmInput.className = "past col-10";
+    twelvePmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 2) {
+    twoPmInput.className = "present col-10";
+    // future times below
+    threePmInput.className = "future col-10";
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+     // past times below
+     nineAmInput.className = "past col-10";
+     tenAmInput.className = "past col-10";
+     elevenAmInput.className = "past col-10";
+     twelvePmInput.className = "past col-10";
+     onePmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 3) {
+    threePmInput.className = "present col-10";
+    // future times below
+    fourPmInput.className = "future col-10";
+    fivePmInput.className = "future col-10";
+    // past times below
+    nineAmInput.className = "past col-10";
+    tenAmInput.className = "past col-10";
+    elevenAmInput.className = "past col-10";
+    twelvePmInput.className = "past col-10";
+    onePmInput.className = "past col-10";
+    twoPmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 4) {
+    fourPmInput.className = "present col-10";
+    // future times below
+    fivePmInput.className = "future col-10";
+     // past times below
+     nineAmInput.className = "past col-10";
+     tenAmInput.className = "past col-10";
+     elevenAmInput.className = "past col-10";
+     twelvePmInput.className = "past col-10";
+     onePmInput.className = "past col-10";
+     twoPmInput.className = "past col-10";
+     threePmInput.className = "past col-10";
+}
+
+if (parseInt(currentTime) === 5) {
+    fivePmInput.className = "present col-10";
+    // past times below
+    nineAmInput.className = "past col-10";
+    tenAmInput.className = "past col-10";
+    elevenAmInput.className = "past col-10";
+    twelvePmInput.className = "past col-10";
+    onePmInput.className = "past col-10";
+    twoPmInput.className = "past col-10";
+    threePmInput.className = "past col-10";
+    fourPmInput.className = "past col-10";
+
+}
+
+
+
+
+
+
+
+
+
 // logic for 9 am input
 var storedNineAmText = localStorage.getItem("nineAmInput");
 
@@ -220,7 +363,7 @@ var saveFivePmInput = function() {
     localStorage.setItem("fivePmInput", fivePmInput.textContent);
 };
 
-// event listeners for buttons
+// save button event listeners
 nineAmBtn.addEventListener("click", saveNineAmInput);
 tenAmBtn.addEventListener("click", saveTenAmInput);
 elevenAmBtn.addEventListener("click", saveElevenAmInput);
