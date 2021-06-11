@@ -20,13 +20,10 @@ var threePmBtn = document.querySelector("#btn-3");
 var fourPmBtn = document.querySelector("#btn-4");
 var fivePmBtn = document.querySelector("#btn-5");
 
-// logic for moment.js
+// logic for time
 
 // get current time
 var currentTime = moment().format("hh");
-
-// for past hour(s)
-
 
 // for current hour
 if (parseInt(currentTime) === 9) {
@@ -40,7 +37,6 @@ if (parseInt(currentTime) === 9) {
     threePmInput.className = "future col-10";
     fourPmInput.className = "future col-10";
     fivePmInput.className = "future col-10";
-
 }
 
 if (parseInt(currentTime) === 10) {
@@ -152,16 +148,7 @@ if (parseInt(currentTime) === 5) {
     twoPmInput.className = "past col-10";
     threePmInput.className = "past col-10";
     fourPmInput.className = "past col-10";
-
 }
-
-
-
-
-
-
-
-
 
 // logic for 9 am input
 var storedNineAmText = localStorage.getItem("nineAmInput");
@@ -174,13 +161,17 @@ if (nineAmInput) {
 };
 
 
-nineAmInput.addEventListener("input", letter => {
-    nineAmInput.textContent = letter.target.value;
+nineAmInput.addEventListener("input", usersInput => {
+
+    nineAmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveNineAmInput = function() {
+
     localStorage.setItem("nineAmInput", nineAmInput.textContent);
+
 };
 
 // logic for 10 am input 
@@ -194,13 +185,17 @@ if (tenAmInput) {
 };
 
 
-tenAmInput.addEventListener("input", letter => {
-    tenAmInput.textContent = letter.target.value;
+tenAmInput.addEventListener("input", usersInput => {
+
+    tenAmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveTenAmInput = function() {
+
     localStorage.setItem("tenAmInput", tenAmInput.textContent);
+
 };
 
 // logic for 11 am input 
@@ -214,13 +209,17 @@ if (elevenAmInput) {
 };
 
 
-elevenAmInput.addEventListener("input", letter => {
-    elevenAmInput.textContent = letter.target.value;
+elevenAmInput.addEventListener("input", usersInput => {
+
+    elevenAmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveElevenAmInput = function() {
+
     localStorage.setItem("elevenAmInput", elevenAmInput.textContent);
+
 };
 
 // logic for 10 am input 
@@ -234,13 +233,17 @@ if (tenAmInput) {
 };
 
 
-tenAmInput.addEventListener("input", letter => {
-    tenAmInput.textContent = letter.target.value;
+tenAmInput.addEventListener("input", usersInput => {
+
+    tenAmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveTenAmInput = function() {
+
     localStorage.setItem("tenAmInput", tenAmInput.textContent);
+
 };
 
 // logic for 12 pm input 
@@ -254,13 +257,17 @@ if (twelvePmInput) {
 };
 
 
-twelvePmInput.addEventListener("input", letter => {
-    twelvePmInput.textContent = letter.target.value;
+twelvePmInput.addEventListener("input", usersInput => {
+
+    twelvePmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveTwelvePmInput = function() {
+
     localStorage.setItem("twelvePmInput", twelvePmInput.textContent);
+
 };
 
 // logic for 1 pm input 
@@ -274,13 +281,17 @@ if (onePmInput) {
 };
 
 
-onePmInput.addEventListener("input", letter => {
-    onePmInput.textContent = letter.target.value;
+onePmInput.addEventListener("input", usersInput => {
+
+    onePmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveOnePmInput = function() {
+
     localStorage.setItem("onePmInput", onePmInput.textContent);
+
 };
 
 // logic for 2 pm input 
@@ -294,13 +305,17 @@ if (twoPmInput) {
 };
 
 
-twoPmInput.addEventListener("input", letter => {
-    twoPmInput.textContent = letter.target.value;
+twoPmInput.addEventListener("input", usersInput => {
+
+    twoPmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveTwoPmInput = function() {
+
     localStorage.setItem("twoPmInput", twoPmInput.textContent);
+
 };
 
 // logic for 3 pm input 
@@ -314,13 +329,17 @@ if (threePmInput) {
 };
 
 
-threePmInput.addEventListener("input", letter => {
-    threePmInput.textContent = letter.target.value;
+threePmInput.addEventListener("input", usersInput => {
+
+    threePmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveThreePmInput = function() {
+
     localStorage.setItem("threePmInput", threePmInput.textContent);
+
 };
 
 // logic for 4 pm input 
@@ -334,13 +353,17 @@ if (fourPmInput) {
 };
 
 
-fourPmInput.addEventListener("input", letter => {
-    fourPmInput.textContent = letter.target.value;
+fourPmInput.addEventListener("input", usersInput => {
+
+    fourPmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveFourPmInput = function() {
+
     localStorage.setItem("fourPmInput", fourPmInput.textContent);
+
 };
 
 // logic for 5 pm input 
@@ -354,13 +377,17 @@ if (fivePmInput) {
 };
 
 
-fivePmInput.addEventListener("input", letter => {
-    fivePmInput.textContent = letter.target.value;
+fivePmInput.addEventListener("input", usersInput => {
+
+    fivePmInput.textContent = usersInput.target.value;
+
 });
 
 
 var saveFivePmInput = function() {
+
     localStorage.setItem("fivePmInput", fivePmInput.textContent);
+    
 };
 
 // save button event listeners
