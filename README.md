@@ -1,1 +1,32 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler
+
+## Purpose
+
+A webpage that allows users to input a day's tasks and save them to local storage. The application is also color coded to based on what the current time is.
+
+## Built With
+
+- HTML
+- CSS
+- JavaScript
+
+## Website
+
+# Chase McQuown's Portfolio
+
+## Purpose
+
+A portfolio displaying my deployed applications.
+
+## Built With
+
+- HTML
+- CSS
+
+## Website
+
+https://chasemcquown.github.io/work-day-scheduler/
+
+## Contribution
+
+Made with ❤️ by Chase McQuown
