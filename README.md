@@ -10,20 +10,7 @@ A webpage that allows users to input a day's tasks and save them to local storag
 - CSS
 - JavaScript
 
-## Website
-
-# Chase McQuown's Portfolio
-
-## Purpose
-
-A portfolio displaying my deployed applications.
-
-## Built With
-
-- HTML
-- CSS
-
-## Website
+# Website
 
 https://chasemcquown.github.io/work-day-scheduler/
 
